@@ -28,7 +28,7 @@ public class RobotColorChooser {
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		Random ran=new Random();
 		//4. Set the pen width to 10
-		for(int j=0; j<1000; j++) {
+		for(int j=0; j<100000; j++) {
 			s=ran.nextInt(360);
 			d=ran.nextInt(20);
 			notarobot.show();
