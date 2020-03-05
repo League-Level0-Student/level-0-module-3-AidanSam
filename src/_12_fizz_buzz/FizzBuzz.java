@@ -26,6 +26,9 @@ package _12_fizz_buzz;
 **/
 
 public class FizzBuzz {
-
+public static void main(String[] args) {
+	for(int j=0; j<21; j++) {
+		System.out.println(j);
 }
-
+}
+}
