@@ -27,8 +27,21 @@ package _12_fizz_buzz;
 
 public class FizzBuzz {
 public static void main(String[] args) {
-	for(int j=0; j<21; j++) {
-		System.out.println(j);
-}
+	for(int j=0; j<200; j++) {
+		if(j % 15 == 0) {
+			System.out.println("fizzbuzz");
+		}else {
+			if(j % 5 == 0) {
+				System.out.println("buzz");
+			}else {
+				if(j % 3 == 0) {
+				System.out.println("fizz");
+			}else {
+				System.out.println(j);
+			}
+			
+		}
+		}
+	}
 }
 }

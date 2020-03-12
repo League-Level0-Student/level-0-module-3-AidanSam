@@ -1,8 +1,47 @@
+int b=0;
+void keyPressed(){
+  if(keyCode == 32){
+    fill(#FFF700);
+    ellipse(mouseX, mouseY, 40, 40);
+    fill(#000000);
+    ellipse(mouseX, mouseY -= 3, 7, 7);
+    ellipse(mouseX -=6 , mouseY -= 7, 7, 7);
+    ellipse(mouseX +=12, mouseY, 7, 7);
+    ellipse(mouseX -=6, mouseY +=17, 6, 6);
+    ellipse(mouseX -=0.1, mouseY, 6, 6);
+    ellipse(mouseX -=0.1, mouseY, 6, 6);
+    ellipse(mouseX -=0.1, mouseY, 6, 6);
+    ellipse(mouseX -=0.1, mouseY, 6, 6);
+    ellipse(mouseX -=0.1, mouseY, 6, 6);
+    ellipse(mouseX -=0.1, mouseY -=0.01, 6, 6);
+  ellipse(mouseX +=6, mouseY +=1, 6, 6);
+  ellipse(mouseX+=1, mouseY, 6, 6);
+  ellipse(mouseX+=1, mouseY, 6, 6);
+  ellipse(mouseX+=1, mouseY, 6, 6);
+  ellipse(mouseX+=1, mouseY, 6, 6);
+  ellipse(mouseX+=1, mouseY -=1, 6, 6);
+  }
+}
 void draw() {
 /*Use a loop to make a body for the Bee!
 Then put his head on using drawBeeFace(x,y)
 Use Modulo to make the colors alternate 
 */
+
+if(mousePressed){
+  print(b);
+  if(b % 2 == 0){
+    fill(#FFF700);
+  }else{
+    fill(#000000);
+
+}
+ellipse(mouseX, mouseY, 40,40);
+
+b+=1;
+
+}
+
 }
 
 void drawFlower(int x, int y) {
