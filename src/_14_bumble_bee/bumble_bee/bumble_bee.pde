@@ -1,25 +1,7 @@
 int b=0;
 void keyPressed(){
   if(keyCode == 32){
-    fill(#FFF700);
-    ellipse(mouseX, mouseY, 40, 40);
-    fill(#000000);
-    ellipse(mouseX, mouseY -= 3, 7, 7);
-    ellipse(mouseX -=6 , mouseY -= 7, 7, 7);
-    ellipse(mouseX +=12, mouseY, 7, 7);
-    ellipse(mouseX -=6, mouseY +=17, 6, 6);
-    ellipse(mouseX -=0.1, mouseY, 6, 6);
-    ellipse(mouseX -=0.1, mouseY, 6, 6);
-    ellipse(mouseX -=0.1, mouseY, 6, 6);
-    ellipse(mouseX -=0.1, mouseY, 6, 6);
-    ellipse(mouseX -=0.1, mouseY, 6, 6);
-    ellipse(mouseX -=0.1, mouseY -=0.01, 6, 6);
-  ellipse(mouseX +=6, mouseY +=1, 6, 6);
-  ellipse(mouseX+=1, mouseY, 6, 6);
-  ellipse(mouseX+=1, mouseY, 6, 6);
-  ellipse(mouseX+=1, mouseY, 6, 6);
-  ellipse(mouseX+=1, mouseY, 6, 6);
-  ellipse(mouseX+=1, mouseY -=1, 6, 6);
+    drawBeeFace(mouseX, mouseY);
   }
 }
 void draw() {
